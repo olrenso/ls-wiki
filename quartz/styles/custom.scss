@@ -1,3 +1,10 @@
 @use "./base.scss";
 
+// Palette https://coolors.co/palette/386641-6a994e-a7c957-f2e8cf-bc4749
+
 // put your custom CSS here!
+
+@import "./customStyles/images.scss";
+@import "./customStyles/links.scss";
+@import "./customStyles/text.scss";
+@import "./customStyles/headings.scss";

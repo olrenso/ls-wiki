@@ -1,0 +1,14 @@
+a.internal{
+    font-family: var(--bodyFont);
+    font-variant-caps: all-small-caps;
+    text-decoration-line: none !important;
+    // color: var(--color-base-60) !important;
+    background: transparent;
+    border: none;
+}
+:root[saved-theme="light"] a.internal{
+    color: var(--darkgray);
+}
+:root[saved-theme="dark"] a.internal{
+    color: color-mix(in srgb, var(--gray)65%,var(--dark)35%);
+}

@@ -1,0 +1,44 @@
+img{
+    border-radius: 7px;
+    
+    /* Center images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    image-rendering: auto !important;
+}
+
+/* Display images in list centered */
+li img{
+    display: block;
+}
+
+/* Blend white background with background color */
+img{
+    mix-blend-mode: var(--image-blend-mode);
+}
+html[saved-theme=dark] img{
+    filter: hue-rotate(180deg) invert(1);
+}
+p{
+    background-color: inherit;
+}
+
+html[saved-theme=light]{
+    --image-muted: 0.85;
+    --image-blend-mode: multiply;
+}
+html[saved-theme=dark]{
+    --image-muted: 0.75;
+    --image-blend-mode: lighten;
+}
+
+img {
+    opacity:var(--image-muted);
+    transition:opacity 0.25s linear;
+}
+img:hover {
+    opacity:1;
+    transition:opacity 0.25s linear;
+}
